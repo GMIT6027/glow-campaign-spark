@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, Check, Arrow } from "lucide-react";
+import { Calendar, Mail, Check, ArrowRight } from "lucide-react";
 
 const mockCampaigns = [
   {
@@ -89,7 +89,7 @@ export const EmailDashboard = () => {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Click Rate</CardTitle>
-            <Arrow className="h-4 w-4 text-muted-foreground" />
+            <ArrowRight className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-orange-600">{clickRate}%</div>
